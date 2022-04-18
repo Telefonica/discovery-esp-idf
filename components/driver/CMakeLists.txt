@@ -5,6 +5,7 @@ set(srcs
     "i2c.c"
     "i2s.c"
     "ledc.c"
+    "legacy_new_driver_coexist.c"
     "pcnt.c"
     "periph_ctrl.c"
     "rmt.c"
@@ -67,7 +68,7 @@ if(${target} STREQUAL "esp32s3")
                      "spi_slave_hd.c"
                      "touch_sensor_common.c"
                      "esp32s3/touch_sensor.c"
-                    )
+		     "temperature_sensor.c")
 endif()
 
 if(IDF_TARGET STREQUAL "esp32c3")
